@@ -104,6 +104,12 @@
     <Compile Include="uscNhanVien.Designer.cs">
       <DependentUpon>uscNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="uscSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uscSanPham.Designer.cs">
+      <DependentUpon>uscSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="uscTrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uscNhanVien.resx">
       <DependentUpon>uscNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uscSanPham.resx">
+      <DependentUpon>uscSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uscTrangChu.resx">
       <DependentUpon>uscTrangChu.cs</DependentUpon>

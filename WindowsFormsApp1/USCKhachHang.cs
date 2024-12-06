@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class uscSanPham : UserControl
+    public partial class uscKhachHang : UserControl
     {
 
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True");
@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         String str = "Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
-        public uscSanPham()
+        public uscKhachHang()
         {
             InitializeComponent();
             LoadData();
@@ -227,6 +227,9 @@ namespace WindowsFormsApp1
             LoadData();
         }
 
-        
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

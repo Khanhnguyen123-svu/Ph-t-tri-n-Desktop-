@@ -85,6 +85,7 @@ namespace WindowsFormsApp1
         private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dgvNhanVien.AutoGenerateColumns = true;
+            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -216,14 +217,102 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-
+      
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void pnlNhanVien_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string maNhanVien = txtMaNV.Text.Trim();
+            string tenNhanVien = txtTenNV.Text.Trim();
+            string soDienThoai = txtSDT.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string diaChi = txtDiaChi.Text.Trim();
+            DateTime ngaySinh = dtpNgaySinh.Value;
+            string gioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
+            string vaiTro = rdbNhanVien.Checked ? "Nhân viên" : "Quản lý";
+            if (string.IsNullOrEmpty(maNhanVien) || string.IsNullOrEmpty(tenNhanVien))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên!", "Thông báo");
+                return;
+            }
+            string queryCheck = "SELECT COUNT(*) FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+            string queryUpdate = "UPDATE NhanVien SET TenNhanVien = @TenNhanVien, SoDienThoai = @SoDienThoai, " +
+                                 "Email = @Email, DiaChi = @DiaChi, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, VaiTro = @VaiTro " +
+                                 "WHERE MaNhanVien = @MaNhanVien";
+            string queryInsert = "INSERT INTO NhanVien (MaNhanVien, TenNhanVien, SoDienThoai, Email, DiaChi, NgaySinh, GioiTinh, VaiTro) " +
+                                 "VALUES (@MaNhanVien, @TenNhanVien, @SoDienThoai, @Email, @DiaChi, @NgaySinh, @GioiTinh, @VaiTro)";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(str))
+                {
+                    connection.Open();
+                    using (SqlCommand checkCommand = new SqlCommand(queryCheck, connection))
+                    {
+                        checkCommand.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+                        int count = (int)checkCommand.ExecuteScalar();
+
+                        if (count > 0)
+                        {
+                            using (SqlCommand updateCommand = new SqlCommand(queryUpdate, connection))
+                            {
+                                updateCommand.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+                                updateCommand.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
+                                updateCommand.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
+                                updateCommand.Parameters.AddWithValue("@Email", email);
+                                updateCommand.Parameters.AddWithValue("@DiaChi", diaChi);
+                                updateCommand.Parameters.AddWithValue("@NgaySinh", ngaySinh);
+                                updateCommand.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+                                updateCommand.Parameters.AddWithValue("@VaiTro", vaiTro);
+                                updateCommand.ExecuteNonQuery();
+
+                                MessageBox.Show("Cập nhật thông tin nhân viên thành công!", "Thông báo");
+                            }
+                        }
+                        else
+                        {
+                            using (SqlCommand insertCommand = new SqlCommand(queryInsert, connection))
+                            {
+                                insertCommand.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+                                insertCommand.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
+                                insertCommand.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
+                                insertCommand.Parameters.AddWithValue("@Email", email);
+                                insertCommand.Parameters.AddWithValue("@DiaChi", diaChi);
+                                insertCommand.Parameters.AddWithValue("@NgaySinh", ngaySinh);
+                                insertCommand.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+                                insertCommand.Parameters.AddWithValue("@VaiTro", vaiTro);
+                                insertCommand.ExecuteNonQuery();
+
+                                MessageBox.Show("Thêm nhân viên mới thành công!", "Thông báo");
+                            }
+                        }
+                    }
+                }
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu nhân viên: " + ex.Message, "Thông báo");
+            }
+            txtMaNV.Clear();
+            txtTenNV.Clear();
+            txtSDT.Clear();
+            txtEmail.Clear();
+            txtDiaChi.Clear();
+            dtpNgaySinh.Value = DateTime.Now;
+            rdbNam.Checked = false;
+            rdbNu.Checked = false;
+            rdbNhanVien.Checked = false;
+            rdbQuanLi.Checked = false;
+        }
     }
-}
+ }
+

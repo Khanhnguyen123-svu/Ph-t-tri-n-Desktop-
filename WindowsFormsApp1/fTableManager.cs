@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
 
         private void fTableManager_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(920,645);
+            
             pnlMain.Controls.Clear();
             uscTrangChu uscTrangChu = new uscTrangChu();  
             pnlMain.Controls.Add(uscTrangChu);
@@ -74,7 +74,7 @@ namespace WindowsFormsApp1
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             pnlMain.Controls.Clear();
-            uscSanPham uscKhachHang = new uscSanPham();
+            uscKhachHang uscKhachHang = new uscKhachHang();
             pnlMain.Controls.Add(uscKhachHang);
         }
 
@@ -87,7 +87,9 @@ namespace WindowsFormsApp1
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
-
+            pnlMain.Controls.Clear();
+            uscSanPham uscSanPham = new uscSanPham();
+            pnlMain.Controls.Add(uscSanPham);
         }
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
@@ -97,6 +99,11 @@ namespace WindowsFormsApp1
 
         }
         private void btnThietLap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlMain_Paint(object sender, PaintEventArgs e)
         {
 
         }

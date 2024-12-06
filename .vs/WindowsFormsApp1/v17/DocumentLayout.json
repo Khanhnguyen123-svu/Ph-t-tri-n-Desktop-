@@ -3,64 +3,84 @@
   "WorkspaceRootPath": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\visual studio\\\u0111\u1ED3 \u00E1n qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscbanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscbanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscbanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usctrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usctrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscbanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscbanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscbanhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscbanhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\visual studio\\\u0111\u1ED3 \u00E1n qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usctrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usctrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\visual studio\\\u0111\u1ED3 \u00E1n qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\visual studio\\\u0111\u1ED3 \u00E1n qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usckhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\ftablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\fmainhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\fmainhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usckhachhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usckhachhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\femailhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\fdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscbanhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscbanhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\fmainhotro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\usctrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\usctrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542D13B6-6B75-4D27-8522-F230F51B112E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\uscnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,11 +98,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "fDangNhap.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fDangNhap.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fDangNhap.cs",
@@ -99,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "fAccountProfile.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fAccountProfile.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fAccountProfile.cs",
@@ -111,33 +127,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "fTableManager.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fTableManager.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fTableManager.cs",
               "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fTableManager.cs",
               "RelativeToolTip": "WindowsFormsApp1\\fTableManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAewEsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAawFsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T10:18:54.847Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "uscNhanVien.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscNhanVien.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\uscNhanVien.cs",
               "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscNhanVien.cs",
               "RelativeToolTip": "WindowsFormsApp1\\uscNhanVien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAApwF8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T10:25:09.511Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "USCKhachHang.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\USCKhachHang.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\USCKhachHang.cs",
@@ -145,11 +163,12 @@
               "RelativeToolTip": "WindowsFormsApp1\\USCKhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T10:53:26.324Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "fTableManager.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fTableManager.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fTableManager.cs",
@@ -157,11 +176,63 @@
               "RelativeToolTip": "WindowsFormsApp1\\fTableManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T11:30:51.769Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
+              "Title": "uscSanPham.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscSanPham.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\uscSanPham.cs",
+              "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscSanPham.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\uscSanPham.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAhwEIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:20:44.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "uscSanPham.cs [Design]",
+              "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscSanPham.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\uscSanPham.cs",
+              "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscSanPham.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\uscSanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:10:20.104Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "uscNhanVien.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscNhanVien.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\uscNhanVien.Designer.cs",
+              "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscNhanVien.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\uscNhanVien.Designer.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAIwKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T16:51:47.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "USCKhachHang.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\USCKhachHang.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\USCKhachHang.Designer.cs",
+              "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\USCKhachHang.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\USCKhachHang.Designer.cs",
+              "ViewState": "AgIAAMEBAAAAAAAAAAAQwNEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T16:41:25.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "uscBanHang.Designer.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscBanHang.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\uscBanHang.Designer.cs",
@@ -174,13 +245,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "uscBanHang.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscBanHang.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\uscBanHang.cs",
               "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscBanHang.cs",
               "RelativeToolTip": "WindowsFormsApp1\\uscBanHang.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAD4v0QAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T07:20:19.058Z",
               "EditorCaption": ""
@@ -199,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "fDangNhap.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fDangNhap.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fDangNhap.cs",
@@ -210,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "fMainHoTro.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fMainHoTro.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fMainHoTro.cs",
@@ -222,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "fMainHoTro.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fMainHoTro.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fMainHoTro.cs",
@@ -233,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "fEmailHoTro.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fEmailHoTro.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fEmailHoTro.cs",
@@ -245,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "fEmailHoTro.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\fEmailHoTro.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\fEmailHoTro.cs",
@@ -256,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "uscTrangChu.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscTrangChu.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\uscTrangChu.cs",
@@ -264,41 +335,45 @@
               "RelativeToolTip": "WindowsFormsApp1\\uscTrangChu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:00:51.206Z"
+              "WhenOpened": "2024-12-02T18:00:51.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "USCKhachHang.cs",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\USCKhachHang.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\USCKhachHang.cs",
               "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\USCKhachHang.cs",
               "RelativeToolTip": "WindowsFormsApp1\\USCKhachHang.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAawOUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAADgvzYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:57:52.08Z"
+              "WhenOpened": "2024-12-02T16:57:52.08Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "uscTrangChu.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscTrangChu.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\uscTrangChu.cs",
               "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscTrangChu.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\uscTrangChu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:53:04.751Z"
+              "WhenOpened": "2024-12-02T16:53:04.751Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "uscNhanVien.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscNhanVien.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\uscNhanVien.cs",
               "ToolTip": "D:\\Visual Studio\\\u0110\u1ED3 \u00E1n Qu\u1EA3n l\u00ED c\u1EEDa h\u00E0ng ti\u1EC7n l\u1EE3i\\WindowsFormsApp1\\uscNhanVien.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\uscNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T10:22:40.478Z"
+              "WhenOpened": "2024-12-02T10:22:40.478Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

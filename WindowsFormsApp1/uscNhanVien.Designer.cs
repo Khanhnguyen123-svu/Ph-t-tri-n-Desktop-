@@ -36,6 +36,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pnlVaiTro = new System.Windows.Forms.Panel();
             this.lblVaiTro = new System.Windows.Forms.Label();
@@ -51,25 +52,22 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.lblSDT = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblQuanLiNhanVien = new System.Windows.Forms.Label();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pnlNhanVien.SuspendLayout();
             this.pnlTacVuNV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.panel4.SuspendLayout();
             this.pnlVaiTro.SuspendLayout();
             this.pnlGioiTinh.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,14 +75,15 @@
             // 
             this.pnlNhanVien.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pnlNhanVien.Controls.Add(this.pnlTacVuNV);
+            this.pnlNhanVien.Controls.Add(this.dgvNhanVien);
             this.pnlNhanVien.Controls.Add(this.panel4);
-            this.pnlNhanVien.Controls.Add(this.panel3);
             this.pnlNhanVien.Controls.Add(this.panel2);
             this.pnlNhanVien.Location = new System.Drawing.Point(0, 0);
             this.pnlNhanVien.Name = "pnlNhanVien";
-            this.pnlNhanVien.Size = new System.Drawing.Size(1031, 735);
+            this.pnlNhanVien.Size = new System.Drawing.Size(1043, 730);
             this.pnlNhanVien.TabIndex = 7;
             this.pnlNhanVien.Tag = "";
+            this.pnlNhanVien.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlNhanVien_Paint);
             // 
             // pnlTacVuNV
             // 
@@ -92,9 +91,9 @@
             this.pnlTacVuNV.Controls.Add(this.btnEdit);
             this.pnlTacVuNV.Controls.Add(this.btnDelete);
             this.pnlTacVuNV.Controls.Add(this.btnAdd);
-            this.pnlTacVuNV.Location = new System.Drawing.Point(572, 184);
+            this.pnlTacVuNV.Location = new System.Drawing.Point(554, 166);
             this.pnlTacVuNV.Name = "pnlTacVuNV";
-            this.pnlTacVuNV.Size = new System.Drawing.Size(459, 62);
+            this.pnlTacVuNV.Size = new System.Drawing.Size(464, 62);
             this.pnlTacVuNV.TabIndex = 4;
             // 
             // btnSave
@@ -102,7 +101,7 @@
             this.btnSave.BackColor = System.Drawing.Color.DarkGray;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(363, 5);
+            this.btnSave.Location = new System.Drawing.Point(360, 3);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(83, 49);
             this.btnSave.TabIndex = 13;
@@ -149,6 +148,35 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // dgvNhanVien
+            // 
+            this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNhanVien.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+            this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNhanVien.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvNhanVien.Location = new System.Drawing.Point(28, 234);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.RowHeadersWidth = 60;
+            this.dgvNhanVien.RowTemplate.Height = 24;
+            this.dgvNhanVien.Size = new System.Drawing.Size(990, 220);
+            this.dgvNhanVien.TabIndex = 0;
+            this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellContentClick);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pnlVaiTro);
@@ -159,7 +187,7 @@
             this.panel4.Controls.Add(this.lblEmail);
             this.panel4.Controls.Add(this.txtSDT);
             this.panel4.Controls.Add(this.lblSDT);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblQuanLiNhanVien);
             this.panel4.Controls.Add(this.txtTenNV);
             this.panel4.Controls.Add(this.lblTenNV);
             this.panel4.Controls.Add(this.lblMaNV);
@@ -168,7 +196,7 @@
             this.panel4.Controls.Add(this.txtDiaChi);
             this.panel4.Location = new System.Drawing.Point(3, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1025, 182);
+            this.panel4.Size = new System.Drawing.Size(1015, 165);
             this.panel4.TabIndex = 3;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -177,7 +205,7 @@
             this.pnlVaiTro.Controls.Add(this.lblVaiTro);
             this.pnlVaiTro.Controls.Add(this.rdbNhanVien);
             this.pnlVaiTro.Controls.Add(this.rdbQuanLi);
-            this.pnlVaiTro.Location = new System.Drawing.Point(717, 74);
+            this.pnlVaiTro.Location = new System.Drawing.Point(708, 78);
             this.pnlVaiTro.Name = "pnlVaiTro";
             this.pnlVaiTro.Size = new System.Drawing.Size(298, 43);
             this.pnlVaiTro.TabIndex = 22;
@@ -224,7 +252,7 @@
             this.pnlGioiTinh.Controls.Add(this.lblGioiTinh);
             this.pnlGioiTinh.Controls.Add(this.rdbNu);
             this.pnlGioiTinh.Controls.Add(this.rdbNam);
-            this.pnlGioiTinh.Location = new System.Drawing.Point(717, 34);
+            this.pnlGioiTinh.Location = new System.Drawing.Point(708, 34);
             this.pnlGioiTinh.Name = "pnlGioiTinh";
             this.pnlGioiTinh.Size = new System.Drawing.Size(298, 34);
             this.pnlGioiTinh.TabIndex = 21;
@@ -271,7 +299,7 @@
             this.dtpNgaySinh.CalendarMonthBackground = System.Drawing.SystemColors.ControlLightLight;
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(484, 83);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(481, 75);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(195, 22);
             this.dtpNgaySinh.TabIndex = 20;
@@ -281,7 +309,7 @@
             this.lblNgaySinh.AutoSize = true;
             this.lblNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgaySinh.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblNgaySinh.Location = new System.Drawing.Point(388, 87);
+            this.lblNgaySinh.Location = new System.Drawing.Point(388, 78);
             this.lblNgaySinh.Name = "lblNgaySinh";
             this.lblNgaySinh.Size = new System.Drawing.Size(79, 18);
             this.lblNgaySinh.TabIndex = 19;
@@ -290,7 +318,7 @@
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtEmail.Location = new System.Drawing.Point(484, 136);
+            this.txtEmail.Location = new System.Drawing.Point(484, 123);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(195, 22);
             this.txtEmail.TabIndex = 18;
@@ -300,7 +328,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblEmail.Location = new System.Drawing.Point(388, 137);
+            this.lblEmail.Location = new System.Drawing.Point(388, 124);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(49, 18);
             this.lblEmail.TabIndex = 17;
@@ -309,7 +337,7 @@
             // txtSDT
             // 
             this.txtSDT.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtSDT.Location = new System.Drawing.Point(145, 135);
+            this.txtSDT.Location = new System.Drawing.Point(145, 119);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(195, 22);
             this.txtSDT.TabIndex = 16;
@@ -319,26 +347,26 @@
             this.lblSDT.AutoSize = true;
             this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblSDT.Location = new System.Drawing.Point(22, 136);
+            this.lblSDT.Location = new System.Drawing.Point(24, 123);
             this.lblSDT.Name = "lblSDT";
             this.lblSDT.Size = new System.Drawing.Size(98, 18);
             this.lblSDT.TabIndex = 15;
             this.lblSDT.Text = "Số điện thoại:";
             // 
-            // label6
+            // lblQuanLiNhanVien
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Quản lý nhân viên";
+            this.lblQuanLiNhanVien.AutoSize = true;
+            this.lblQuanLiNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuanLiNhanVien.Location = new System.Drawing.Point(6, 0);
+            this.lblQuanLiNhanVien.Name = "lblQuanLiNhanVien";
+            this.lblQuanLiNhanVien.Size = new System.Drawing.Size(159, 20);
+            this.lblQuanLiNhanVien.TabIndex = 14;
+            this.lblQuanLiNhanVien.Text = "Quản lý nhân viên";
             // 
             // txtTenNV
             // 
             this.txtTenNV.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtTenNV.Location = new System.Drawing.Point(145, 84);
+            this.txtTenNV.Location = new System.Drawing.Point(145, 74);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(195, 22);
             this.txtTenNV.TabIndex = 3;
@@ -348,7 +376,7 @@
             this.lblTenNV.AutoSize = true;
             this.lblTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenNV.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblTenNV.Location = new System.Drawing.Point(18, 86);
+            this.lblTenNV.Location = new System.Drawing.Point(24, 78);
             this.lblTenNV.Name = "lblTenNV";
             this.lblTenNV.Size = new System.Drawing.Size(103, 18);
             this.lblTenNV.TabIndex = 2;
@@ -379,7 +407,7 @@
             this.lblDiaChi.AutoSize = true;
             this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiaChi.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblDiaChi.Location = new System.Drawing.Point(388, 37);
+            this.lblDiaChi.Location = new System.Drawing.Point(388, 38);
             this.lblDiaChi.Name = "lblDiaChi";
             this.lblDiaChi.Size = new System.Drawing.Size(57, 18);
             this.lblDiaChi.TabIndex = 4;
@@ -393,49 +421,11 @@
             this.txtDiaChi.Size = new System.Drawing.Size(195, 22);
             this.txtDiaChi.TabIndex = 5;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Controls.Add(this.dgvNhanVien);
-            this.panel3.Location = new System.Drawing.Point(0, 252);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1028, 193);
-            this.panel3.TabIndex = 2;
-            // 
-            // dgvNhanVien
-            // 
-            this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            this.dgvNhanVien.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
-            this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNhanVien.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvNhanVien.Location = new System.Drawing.Point(3, 3);
-            this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.RowHeadersWidth = 60;
-            this.dgvNhanVien.RowTemplate.Height = 24;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1022, 188);
-            this.dgvNhanVien.TabIndex = 0;
-            this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellContentClick);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Location = new System.Drawing.Point(3, 184);
+            this.panel2.Location = new System.Drawing.Point(3, 166);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(481, 62);
             this.panel2.TabIndex = 1;
@@ -467,17 +457,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlNhanVien);
             this.Name = "uscNhanVien";
-            this.Size = new System.Drawing.Size(1032, 735);
+            this.Size = new System.Drawing.Size(1043, 730);
             this.pnlNhanVien.ResumeLayout(false);
             this.pnlTacVuNV.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.pnlVaiTro.ResumeLayout(false);
             this.pnlVaiTro.PerformLayout();
             this.pnlGioiTinh.ResumeLayout(false);
             this.pnlGioiTinh.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -502,7 +491,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label lblSDT;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblQuanLiNhanVien;
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Label lblTenNV;
         private System.Windows.Forms.Button btnAdd;
@@ -513,7 +502,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblDiaChi;
         private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSearch;

@@ -64,9 +64,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblBoLoc = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnTrangTruoc = new System.Windows.Forms.Button();
-            this.btnTrangSau = new System.Windows.Forms.Button();
-            this.pnlChuyenTrang = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlThongTinHD.SuspendLayout();
@@ -76,7 +73,6 @@
             this.panel8.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.pnlChuyenTrang.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -169,18 +165,18 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(292, 488);
+            this.btnHuy.Location = new System.Drawing.Point(292, 498);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(97, 40);
+            this.btnHuy.Size = new System.Drawing.Size(123, 40);
             this.btnHuy.TabIndex = 10;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(165, 488);
+            this.btnThanhToan.Location = new System.Drawing.Point(139, 498);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(97, 40);
+            this.btnThanhToan.Size = new System.Drawing.Size(130, 40);
             this.btnThanhToan.TabIndex = 9;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
@@ -276,17 +272,17 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.flpSanPham);
             this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.pnlChuyenTrang);
             this.panel3.Location = new System.Drawing.Point(460, 159);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(570, 555);
+            this.panel3.Size = new System.Drawing.Size(557, 555);
             this.panel3.TabIndex = 2;
             // 
             // flpSanPham
             // 
-            this.flpSanPham.Location = new System.Drawing.Point(0, 62);
+            this.flpSanPham.AutoScroll = true;
+            this.flpSanPham.Location = new System.Drawing.Point(0, 55);
             this.flpSanPham.Name = "flpSanPham";
-            this.flpSanPham.Size = new System.Drawing.Size(568, 430);
+            this.flpSanPham.Size = new System.Drawing.Size(556, 499);
             this.flpSanPham.TabIndex = 3;
             this.flpSanPham.Paint += new System.Windows.Forms.PaintEventHandler(this.flpSanPham_Paint);
             // 
@@ -297,7 +293,7 @@
             this.panel8.Controls.Add(this.lblDMSP);
             this.panel8.Location = new System.Drawing.Point(-1, -6);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(570, 61);
+            this.panel8.Size = new System.Drawing.Size(569, 61);
             this.panel8.TabIndex = 2;
             // 
             // lblDMSP
@@ -325,15 +321,15 @@
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Location = new System.Drawing.Point(460, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(569, 153);
+            this.panel4.Size = new System.Drawing.Size(557, 153);
             this.panel4.TabIndex = 3;
             // 
             // btnLamMoi
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(125, 120);
+            this.btnLamMoi.Location = new System.Drawing.Point(128, 121);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(75, 27);
+            this.btnLamMoi.Size = new System.Drawing.Size(105, 27);
             this.btnLamMoi.TabIndex = 9;
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
@@ -341,9 +337,9 @@
             // btnApDung
             // 
             this.btnApDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApDung.Location = new System.Drawing.Point(29, 120);
+            this.btnApDung.Location = new System.Drawing.Point(16, 120);
             this.btnApDung.Name = "btnApDung";
-            this.btnApDung.Size = new System.Drawing.Size(75, 27);
+            this.btnApDung.Size = new System.Drawing.Size(106, 27);
             this.btnApDung.TabIndex = 8;
             this.btnApDung.Text = "Áp Dụng";
             this.btnApDung.UseVisualStyleBackColor = true;
@@ -409,7 +405,7 @@
             this.panel6.Controls.Add(this.lblBoLoc);
             this.panel6.Location = new System.Drawing.Point(-5, -10);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(573, 61);
+            this.panel6.Size = new System.Drawing.Size(574, 61);
             this.panel6.TabIndex = 1;
             // 
             // lblBoLoc
@@ -428,35 +424,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // btnTrangTruoc
-            // 
-            this.btnTrangTruoc.Location = new System.Drawing.Point(395, 12);
-            this.btnTrangTruoc.Name = "btnTrangTruoc";
-            this.btnTrangTruoc.Size = new System.Drawing.Size(75, 37);
-            this.btnTrangTruoc.TabIndex = 0;
-            this.btnTrangTruoc.Text = "button1";
-            this.btnTrangTruoc.UseVisualStyleBackColor = true;
-            this.btnTrangTruoc.Click += new System.EventHandler(this.btnTrangTruoc_Click);
-            // 
-            // btnTrangSau
-            // 
-            this.btnTrangSau.Location = new System.Drawing.Point(476, 12);
-            this.btnTrangSau.Name = "btnTrangSau";
-            this.btnTrangSau.Size = new System.Drawing.Size(75, 37);
-            this.btnTrangSau.TabIndex = 1;
-            this.btnTrangSau.Text = "button2";
-            this.btnTrangSau.UseVisualStyleBackColor = true;
-            // 
-            // pnlChuyenTrang
-            // 
-            this.pnlChuyenTrang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlChuyenTrang.Controls.Add(this.btnTrangSau);
-            this.pnlChuyenTrang.Controls.Add(this.btnTrangTruoc);
-            this.pnlChuyenTrang.Location = new System.Drawing.Point(-5, 488);
-            this.pnlChuyenTrang.Name = "pnlChuyenTrang";
-            this.pnlChuyenTrang.Size = new System.Drawing.Size(574, 66);
-            this.pnlChuyenTrang.TabIndex = 4;
-            // 
             // uscBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -467,7 +434,7 @@
             this.Controls.Add(this.pnlThongTinHD);
             this.Controls.Add(this.panel1);
             this.Name = "uscBanHang";
-            this.Size = new System.Drawing.Size(1030, 731);
+            this.Size = new System.Drawing.Size(1070, 731);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -484,7 +451,6 @@
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.pnlChuyenTrang.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -526,8 +492,5 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.Button btnTrangSau;
-        private System.Windows.Forms.Button btnTrangTruoc;
-        private System.Windows.Forms.Panel pnlChuyenTrang;
     }
 }

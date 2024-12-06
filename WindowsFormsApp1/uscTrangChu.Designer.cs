@@ -68,14 +68,14 @@
             this.pnlTrangChu.Controls.Add(this.flowLayoutPanel1);
             this.pnlTrangChu.Location = new System.Drawing.Point(0, 0);
             this.pnlTrangChu.Name = "pnlTrangChu";
-            this.pnlTrangChu.Size = new System.Drawing.Size(1031, 731);
+            this.pnlTrangChu.Size = new System.Drawing.Size(1059, 731);
             this.pnlTrangChu.TabIndex = 0;
             this.pnlTrangChu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTrangChu_Paint);
             // 
             // btnEmail
             // 
             this.btnEmail.Image = ((System.Drawing.Image)(resources.GetObject("btnEmail.Image")));
-            this.btnEmail.Location = new System.Drawing.Point(936, 3);
+            this.btnEmail.Location = new System.Drawing.Point(933, 16);
             this.btnEmail.Name = "btnEmail";
             this.btnEmail.Size = new System.Drawing.Size(85, 47);
             this.btnEmail.TabIndex = 7;
@@ -90,7 +90,7 @@
             this.pnlTopSP.Controls.Add(this.pnlTopSPBanChay);
             this.pnlTopSP.Location = new System.Drawing.Point(488, 198);
             this.pnlTopSP.Name = "pnlTopSP";
-            this.pnlTopSP.Size = new System.Drawing.Size(540, 509);
+            this.pnlTopSP.Size = new System.Drawing.Size(530, 509);
             this.pnlTopSP.TabIndex = 6;
             // 
             // pnlTopSPBanChay
@@ -120,14 +120,14 @@
             // 
             this.dtpNgayTopSP.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayTopSP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayTopSP.Location = new System.Drawing.Point(355, 19);
+            this.dtpNgayTopSP.Location = new System.Drawing.Point(327, 16);
             this.dtpNgayTopSP.Name = "dtpNgayTopSP";
             this.dtpNgayTopSP.Size = new System.Drawing.Size(166, 22);
             this.dtpNgayTopSP.TabIndex = 3;
             // 
             // nudSoLuong
             // 
-            this.nudSoLuong.Location = new System.Drawing.Point(278, 19);
+            this.nudSoLuong.Location = new System.Drawing.Point(255, 18);
             this.nudSoLuong.Name = "nudSoLuong";
             this.nudSoLuong.Size = new System.Drawing.Size(45, 22);
             this.nudSoLuong.TabIndex = 0;
@@ -178,7 +178,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(696, 89);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(332, 103);
+            this.panel4.Size = new System.Drawing.Size(322, 103);
             this.panel4.TabIndex = 4;
             // 
             // panel3
@@ -228,7 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlTrangChu);
             this.Name = "uscTrangChu";
-            this.Size = new System.Drawing.Size(1031, 731);
+            this.Size = new System.Drawing.Size(1059, 731);
             this.pnlTrangChu.ResumeLayout(false);
             this.pnlTopSP.ResumeLayout(false);
             this.pnlTopSPBanChay.ResumeLayout(false);

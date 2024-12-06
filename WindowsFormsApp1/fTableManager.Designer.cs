@@ -197,6 +197,7 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1033, 723);
             this.pnlMain.TabIndex = 8;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // fTableManager
             // 
