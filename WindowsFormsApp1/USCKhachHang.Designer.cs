@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             this.btnAddKH = new System.Windows.Forms.Button();
             this.btnDeleteKH = new System.Windows.Forms.Button();
             this.btnSaveKH = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlHienThi = new System.Windows.Forms.Panel();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.pnlSearchKH = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@ namespace WindowsFormsApp1
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.pnlKhachHang.SuspendLayout();
             this.pnlTacVuKH.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlHienThi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.pnlSearchKH.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -74,7 +74,7 @@ namespace WindowsFormsApp1
             // 
             this.pnlKhachHang.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pnlKhachHang.Controls.Add(this.pnlTacVuKH);
-            this.pnlKhachHang.Controls.Add(this.panel3);
+            this.pnlKhachHang.Controls.Add(this.pnlHienThi);
             this.pnlKhachHang.Controls.Add(this.pnlSearchKH);
             this.pnlKhachHang.Controls.Add(this.panel4);
             this.pnlKhachHang.Location = new System.Drawing.Point(0, 0);
@@ -146,15 +146,15 @@ namespace WindowsFormsApp1
             this.btnSaveKH.UseVisualStyleBackColor = false;
             this.btnSaveKH.Click += new System.EventHandler(this.btnSaveKH_Click);
             // 
-            // panel3
+            // pnlHienThi
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel3.Controls.Add(this.dgvKhachHang);
-            this.panel3.Location = new System.Drawing.Point(2, 217);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1010, 506);
-            this.panel3.TabIndex = 6;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.pnlHienThi.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnlHienThi.Controls.Add(this.dgvKhachHang);
+            this.pnlHienThi.Location = new System.Drawing.Point(2, 217);
+            this.pnlHienThi.Name = "pnlHienThi";
+            this.pnlHienThi.Size = new System.Drawing.Size(1010, 486);
+            this.pnlHienThi.TabIndex = 6;
+            this.pnlHienThi.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // dgvKhachHang
             // 
@@ -177,11 +177,11 @@ namespace WindowsFormsApp1
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvKhachHang.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvKhachHang.Location = new System.Drawing.Point(19, 3);
+            this.dgvKhachHang.Location = new System.Drawing.Point(3, 18);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 60;
             this.dgvKhachHang.RowTemplate.Height = 24;
-            this.dgvKhachHang.Size = new System.Drawing.Size(991, 177);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1007, 465);
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellContentClick);
             // 
@@ -201,7 +201,7 @@ namespace WindowsFormsApp1
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSearch.Location = new System.Drawing.Point(373, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(83, 49);
+            this.btnSearch.Size = new System.Drawing.Size(93, 49);
             this.btnSearch.TabIndex = 12;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -418,7 +418,7 @@ namespace WindowsFormsApp1
             this.Size = new System.Drawing.Size(1044, 723);
             this.pnlKhachHang.ResumeLayout(false);
             this.pnlTacVuKH.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.pnlHienThi.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.pnlSearchKH.ResumeLayout(false);
             this.pnlSearchKH.PerformLayout();
@@ -452,7 +452,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel pnlSearchKH;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlHienThi;
         private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Panel pnlTacVuKH;
         private System.Windows.Forms.TextBox txtEmail;

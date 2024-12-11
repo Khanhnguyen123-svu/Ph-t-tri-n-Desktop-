@@ -38,12 +38,12 @@ namespace WindowsFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnEnter = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblErrorAccount = new System.Windows.Forms.Label();
-            this.lblErrorPassword = new System.Windows.Forms.Label();
             this.btnDK = new System.Windows.Forms.Button();
+            this.cbLuuMK = new System.Windows.Forms.CheckBox();
+            this.btnBanHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -108,26 +108,15 @@ namespace WindowsFormsApp1
             // 
             // btnEnter
             // 
+            this.btnEnter.BackColor = System.Drawing.Color.DarkGray;
             this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(720, 365);
+            this.btnEnter.Location = new System.Drawing.Point(731, 365);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(75, 34);
             this.btnEnter.TabIndex = 7;
             this.btnEnter.Text = "Đăng Nhập";
-            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.UseVisualStyleBackColor = false;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(930, 365);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 34);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -146,7 +135,7 @@ namespace WindowsFormsApp1
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(684, 95);
+            this.label6.Location = new System.Drawing.Point(678, 106);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(239, 20);
             this.label6.TabIndex = 11;
@@ -163,26 +152,42 @@ namespace WindowsFormsApp1
             this.lblErrorAccount.Size = new System.Drawing.Size(0, 16);
             this.lblErrorAccount.TabIndex = 12;
             // 
-            // lblErrorPassword
-            // 
-            this.lblErrorPassword.AutoSize = true;
-            this.lblErrorPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblErrorPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblErrorPassword.Location = new System.Drawing.Point(737, 326);
-            this.lblErrorPassword.Name = "lblErrorPassword";
-            this.lblErrorPassword.Size = new System.Drawing.Size(0, 16);
-            this.lblErrorPassword.TabIndex = 13;
-            // 
             // btnDK
             // 
+            this.btnDK.BackColor = System.Drawing.Color.DarkGray;
             this.btnDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDK.Location = new System.Drawing.Point(824, 365);
+            this.btnDK.Location = new System.Drawing.Point(826, 365);
             this.btnDK.Name = "btnDK";
             this.btnDK.Size = new System.Drawing.Size(75, 34);
             this.btnDK.TabIndex = 14;
             this.btnDK.Text = "Đăng Kí";
-            this.btnDK.UseVisualStyleBackColor = true;
+            this.btnDK.UseVisualStyleBackColor = false;
             this.btnDK.Click += new System.EventHandler(this.btnDK_Click);
+            // 
+            // cbLuuMK
+            // 
+            this.cbLuuMK.AutoSize = true;
+            this.cbLuuMK.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.cbLuuMK.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cbLuuMK.Location = new System.Drawing.Point(848, 329);
+            this.cbLuuMK.Name = "cbLuuMK";
+            this.cbLuuMK.Size = new System.Drawing.Size(148, 20);
+            this.cbLuuMK.TabIndex = 15;
+            this.cbLuuMK.Text = "Ghi Nhớ Đăng Nhập";
+            this.cbLuuMK.UseVisualStyleBackColor = false;
+            this.cbLuuMK.CheckedChanged += new System.EventHandler(this.cbLuuMK_CheckedChanged);
+            // 
+            // btnBanHang
+            // 
+            this.btnBanHang.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanHang.Location = new System.Drawing.Point(921, 365);
+            this.btnBanHang.Name = "btnBanHang";
+            this.btnBanHang.Size = new System.Drawing.Size(75, 34);
+            this.btnBanHang.TabIndex = 16;
+            this.btnBanHang.Text = "Bán Hàng";
+            this.btnBanHang.UseVisualStyleBackColor = false;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // fDangNhap
             // 
@@ -191,14 +196,13 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1017, 538);
+            this.Controls.Add(this.btnBanHang);
+            this.Controls.Add(this.cbLuuMK);
             this.Controls.Add(this.btnDK);
-            this.Controls.Add(this.lblErrorPassword);
             this.Controls.Add(this.lblErrorAccount);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -228,12 +232,12 @@ namespace WindowsFormsApp1
         private EventHandler Form1_Load;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnEnter;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblErrorAccount;
-        private System.Windows.Forms.Label lblErrorPassword;
         private System.Windows.Forms.Button btnDK;
+        private System.Windows.Forms.CheckBox cbLuuMK;
+        private System.Windows.Forms.Button btnBanHang;
 
         public EventHandler txtPassword_TextChanged { get; private set; }
         public EventHandler txtAccount_TextChanged { get; private set; }

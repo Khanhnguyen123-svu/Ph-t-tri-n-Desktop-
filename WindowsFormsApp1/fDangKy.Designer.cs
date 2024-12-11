@@ -64,11 +64,11 @@
             this.lblDki.AutoSize = true;
             this.lblDki.BackColor = System.Drawing.Color.Transparent;
             this.lblDki.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDki.Location = new System.Drawing.Point(219, 27);
+            this.lblDki.Location = new System.Drawing.Point(246, 28);
             this.lblDki.Name = "lblDki";
-            this.lblDki.Size = new System.Drawing.Size(262, 36);
+            this.lblDki.Size = new System.Drawing.Size(270, 36);
             this.lblDki.TabIndex = 2;
-            this.lblDki.Text = "Đăng kí tài khoản";
+            this.lblDki.Text = "Đăng ký tài khoản";
             this.lblDki.Click += new System.EventHandler(this.lblDki_Click);
             // 
             // label3
@@ -244,7 +244,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fDangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng kí thông tin";
+            this.Text = "Đăng ký thông tin";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

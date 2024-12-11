@@ -70,11 +70,11 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(493, 313);
+            this.btnSend.Location = new System.Drawing.Point(471, 313);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(83, 42);
             this.btnSend.TabIndex = 8;
-            this.btnSend.Text = "Send";
+            this.btnSend.Text = "Gửi";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 

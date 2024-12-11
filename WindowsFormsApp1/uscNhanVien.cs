@@ -92,31 +92,38 @@ namespace WindowsFormsApp1
         {
             string query = "INSERT INTO NhanVien (MaNhanVien, TenNhanVien, SoDienThoai, Email, DiaChi, NgaySinh, GioiTinh, VaiTro) " +
                   "VALUES (@MaNhanVien, @TenNhanVien, @SoDienThoai, @Email, @DiaChi, @NgaySinh, @GioiTinh, @VaiTro)";
-            try
+            if(txtMaNV.Text==""&&txtDiaChi.Text==""&&txtEmail.Text==""&&txtSDT.Text==""&&txtTenNV.Text=="")
             {
-                using (SqlConnection connection = new SqlConnection(str))
-                {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@MaNhanVien", txtMaNV.Text);
-                        command.Parameters.AddWithValue("@TenNhanVien", txtTenNV.Text);
-                        command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
-                        command.Parameters.AddWithValue("@Email", txtEmail.Text);
-                        command.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                        command.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
-                        command.Parameters.AddWithValue("@GioiTinh", rdbNam.Checked ? "Nam" : "Nữ");
-                        command.Parameters.AddWithValue("@VaiTro", rdbNhanVien.Checked ? "Nhân viên" : "Quản lý");
-                        command.ExecuteNonQuery();
-                    }
-                }
-
-                MessageBox.Show("Thêm nhân viên thành công!", "Thông báo");
-                LoadData();
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Lỗi khi thêm nhân viên: ", "Thông báo" + ex.Message);
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(str))
+                    {
+                        connection.Open();
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@MaNhanVien", txtMaNV.Text);
+                            command.Parameters.AddWithValue("@TenNhanVien", txtTenNV.Text);
+                            command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
+                            command.Parameters.AddWithValue("@Email", txtEmail.Text);
+                            command.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
+                            command.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
+                            command.Parameters.AddWithValue("@GioiTinh", rdbNam.Checked ? "Nam" : "Nữ");
+                            command.Parameters.AddWithValue("@VaiTro", rdbNhanVien.Checked ? "Nhân viên" : "Quản lý");
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    MessageBox.Show("Thêm nhân viên thành công!", "Thông báo");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi thêm nhân viên: ", "Thông báo" + ex.Message);
+                }
             }
             txtMaNV.Clear();
             txtTenNV.Clear();
@@ -135,32 +142,41 @@ namespace WindowsFormsApp1
             string query = "UPDATE NhanVien SET TenNhanVien = @TenNhanVien, SoDienThoai = @SoDienThoai, " +
                    "Email = @Email, DiaChi = @DiaChi, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, VaiTro = @VaiTro " +
                    "WHERE MaNhanVien = @MaNhanVien";
-            try
+            if (dgvNhanVien.SelectedRows.Count > 0)
             {
-                using (SqlConnection connection = new SqlConnection(str))
-                {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@MaNhanVien", txtMaNV.Text);
-                        command.Parameters.AddWithValue("@TenNhanVien", txtTenNV.Text);
-                        command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
-                        command.Parameters.AddWithValue("@Email", txtEmail.Text);
-                        command.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                        command.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
-                        command.Parameters.AddWithValue("@GioiTinh", rdbNam.Checked ? "Nam" : "Nữ");
-                        command.Parameters.AddWithValue("@VaiTro", rdbNhanVien.Checked ? "Nhân viên" : "Quản lý");
-                        command.ExecuteNonQuery();
-                    }
-                }
+                MessageBox.Show("Vui lòng chọn thông tin nhân viên cần sửa", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                MessageBox.Show("Sửa thông tin nhân viên thành công!", "Thông báo");
-                LoadData();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Lỗi khi sửa nhân viên: ", "Thông báo" + ex.Message);
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(str))
+                    {
+                        connection.Open();
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@MaNhanVien", txtMaNV.Text);
+                            command.Parameters.AddWithValue("@TenNhanVien", txtTenNV.Text);
+                            command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
+                            command.Parameters.AddWithValue("@Email", txtEmail.Text);
+                            command.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
+                            command.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
+                            command.Parameters.AddWithValue("@GioiTinh", rdbNam.Checked ? "Nam" : "Nữ");
+                            command.Parameters.AddWithValue("@VaiTro", rdbNhanVien.Checked ? "Nhân viên" : "Quản lý");
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    MessageBox.Show("Sửa thông tin nhân viên thành công!", "Thông báo");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi sửa nhân viên: ", "Thông báo" + ex.Message);
+                }
             }
+            
             txtMaNV.Clear();
             txtTenNV.Clear();
             txtSDT.Clear();
@@ -177,7 +193,7 @@ namespace WindowsFormsApp1
         {
             if (dgvNhanVien.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần xóa từ bảng!", "Thông báo");
+                MessageBox.Show("Vui lòng chọn nhân viên cần xóa từ bảng!", "Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Question );
                 return;
             }
             string maNhanVien = dgvNhanVien.SelectedRows[0].Cells["MaNhanVien"].Value.ToString();
@@ -205,7 +221,7 @@ namespace WindowsFormsApp1
                         }
                         else
                         {
-                            MessageBox.Show("Không tìm thấy nhân viên để xóa!", "Thông báo");
+                            MessageBox.Show("Không tìm thấy nhân viên để xóa!", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
                         }
                     }
                 }

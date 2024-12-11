@@ -20,9 +20,12 @@ namespace WindowsFormsApp1
         private void btnEmail_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fEmailHoTro ffEmailHoTro = new fEmailHoTro();
-            ffEmailHoTro.ShowDialog();
-            this.Show();
+            {
+                fEmailHoTro ffEmailHoTro = new fEmailHoTro();
+                ffEmailHoTro.ShowDialog();
+                this.Show();
+            
+            }
         }
 
         private void pnlTrangChu_Paint(object sender, PaintEventArgs e)

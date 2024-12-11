@@ -35,22 +35,15 @@ namespace WindowsFormsApp1
         private void btnEnter_Click(object sender, EventArgs e)
         {
           fTableManager trangchu = new fTableManager();
-            this.Hide();
+            
             string tenDangNhap = txtAccount.Text;
             string matKhau = txtPassword.Text;
 
-            if (txtAccount.Text == "")
-            {
-                lblErrorAccount.Text = "Vui lòng nhập thông tin tài khoản ";
-            }
-            if (txtPassword.Text == "")
-            {
-                lblErrorPassword.Text = "Vui lòng nhập mật khẩu";
-            }
+            
             fTableManager f = new fTableManager();
 
             if (txtAccount.Text == "")
-                MessageBox.Show("Vui lòng nhập tài khoản");
+                MessageBox.Show("Vui lòng nhập thông tin tài khoản", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error  );
             else
             {
 
@@ -72,6 +65,27 @@ namespace WindowsFormsApp1
         private void fDangNhap_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void cbLuuMK_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBanHang_Click(object sender, EventArgs e)
+        {
+            string tenDangNhap = txtAccount.Text;
+            string matKhau = txtPassword.Text;
+            fBanHang BanHang = new fBanHang();
+             if (txtAccount.Text == "")
+                MessageBox.Show("Vui lòng nhập thông tin tài khoản", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            else
+            {
+                BanHang.ShowDialog();
+                this.Show();
+                this.Hide();
+            }
+
         }
     }
 }

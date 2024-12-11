@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.nudSoLuongSP = new System.Windows.Forms.NumericUpDown();
+            this.dtpHSDSP = new System.Windows.Forms.DateTimePicker();
             this.dtpNNSP = new System.Windows.Forms.DateTimePicker();
             this.lblHSD = new System.Windows.Forms.Label();
             this.lblNgayNhapSP = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@
             this.lblMaSP = new System.Windows.Forms.Label();
             this.txtMaSP = new System.Windows.Forms.TextBox();
             this.lblSoLuongSP = new System.Windows.Forms.Label();
-            this.dtpHSDSP = new System.Windows.Forms.DateTimePicker();
-            this.nudSoLuongSP = new System.Windows.Forms.NumericUpDown();
             this.pnlSearchSP = new System.Windows.Forms.Panel();
             this.btnSearchSP = new System.Windows.Forms.Button();
             this.txtSearchSP = new System.Windows.Forms.TextBox();
@@ -53,11 +53,13 @@
             this.btnDeleteSP = new System.Windows.Forms.Button();
             this.btnSaveSP = new System.Windows.Forms.Button();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.pnlHienThi = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongSP)).BeginInit();
             this.pnlSearchSP.SuspendLayout();
             this.pnlTacVuSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
+            this.pnlHienThi.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -81,6 +83,23 @@
             this.panel4.Size = new System.Drawing.Size(1009, 162);
             this.panel4.TabIndex = 5;
             // 
+            // nudSoLuongSP
+            // 
+            this.nudSoLuongSP.Location = new System.Drawing.Point(667, 28);
+            this.nudSoLuongSP.Name = "nudSoLuongSP";
+            this.nudSoLuongSP.Size = new System.Drawing.Size(90, 22);
+            this.nudSoLuongSP.TabIndex = 22;
+            // 
+            // dtpHSDSP
+            // 
+            this.dtpHSDSP.CalendarMonthBackground = System.Drawing.SystemColors.ControlLightLight;
+            this.dtpHSDSP.CustomFormat = "dd/MM/yyyy";
+            this.dtpHSDSP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpHSDSP.Location = new System.Drawing.Point(667, 112);
+            this.dtpHSDSP.Name = "dtpHSDSP";
+            this.dtpHSDSP.Size = new System.Drawing.Size(202, 22);
+            this.dtpHSDSP.TabIndex = 21;
+            // 
             // dtpNNSP
             // 
             this.dtpNNSP.CalendarMonthBackground = System.Drawing.SystemColors.ControlLightLight;
@@ -98,7 +117,7 @@
             this.lblHSD.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblHSD.Location = new System.Drawing.Point(470, 112);
             this.lblHSD.Name = "lblHSD";
-            this.lblHSD.Size = new System.Drawing.Size(125, 23);
+            this.lblHSD.Size = new System.Drawing.Size(100, 18);
             this.lblHSD.TabIndex = 19;
             this.lblHSD.Text = "Hạn Sử Dụng:";
             // 
@@ -138,7 +157,7 @@
             this.lblQuanLiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuanLiSP.Location = new System.Drawing.Point(6, 0);
             this.lblQuanLiSP.Name = "lblQuanLiSP";
-            this.lblQuanLiSP.Size = new System.Drawing.Size(213, 25);
+            this.lblQuanLiSP.Size = new System.Drawing.Size(170, 20);
             this.lblQuanLiSP.TabIndex = 14;
             this.lblQuanLiSP.Text = "Quản Lý Sản Phẩm";
             // 
@@ -188,26 +207,9 @@
             this.lblSoLuongSP.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblSoLuongSP.Location = new System.Drawing.Point(470, 30);
             this.lblSoLuongSP.Name = "lblSoLuongSP";
-            this.lblSoLuongSP.Size = new System.Drawing.Size(186, 23);
+            this.lblSoLuongSP.Size = new System.Drawing.Size(149, 18);
             this.lblSoLuongSP.TabIndex = 4;
             this.lblSoLuongSP.Text = "Số Lượng Sản Phẩm:";
-            // 
-            // dtpHSDSP
-            // 
-            this.dtpHSDSP.CalendarMonthBackground = System.Drawing.SystemColors.ControlLightLight;
-            this.dtpHSDSP.CustomFormat = "dd/MM/yyyy";
-            this.dtpHSDSP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHSDSP.Location = new System.Drawing.Point(667, 112);
-            this.dtpHSDSP.Name = "dtpHSDSP";
-            this.dtpHSDSP.Size = new System.Drawing.Size(202, 22);
-            this.dtpHSDSP.TabIndex = 21;
-            // 
-            // nudSoLuongSP
-            // 
-            this.nudSoLuongSP.Location = new System.Drawing.Point(667, 28);
-            this.nudSoLuongSP.Name = "nudSoLuongSP";
-            this.nudSoLuongSP.Size = new System.Drawing.Size(90, 22);
-            this.nudSoLuongSP.TabIndex = 22;
             // 
             // pnlSearchSP
             // 
@@ -225,7 +227,7 @@
             this.btnSearchSP.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSearchSP.Location = new System.Drawing.Point(373, 5);
             this.btnSearchSP.Name = "btnSearchSP";
-            this.btnSearchSP.Size = new System.Drawing.Size(83, 49);
+            this.btnSearchSP.Size = new System.Drawing.Size(93, 49);
             this.btnSearchSP.TabIndex = 12;
             this.btnSearchSP.Text = "Tìm kiếm";
             this.btnSearchSP.UseVisualStyleBackColor = false;
@@ -303,36 +305,44 @@
             this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSanPham.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
             this.dgvSanPham.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSanPham.Location = new System.Drawing.Point(21, 239);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSanPham.Location = new System.Drawing.Point(3, 3);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.RowHeadersWidth = 60;
             this.dgvSanPham.RowTemplate.Height = 24;
-            this.dgvSanPham.Size = new System.Drawing.Size(997, 220);
+            this.dgvSanPham.Size = new System.Drawing.Size(1003, 441);
             this.dgvSanPham.TabIndex = 9;
             this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellContentClick);
+            // 
+            // pnlHienThi
+            // 
+            this.pnlHienThi.Controls.Add(this.dgvSanPham);
+            this.pnlHienThi.Location = new System.Drawing.Point(3, 254);
+            this.pnlHienThi.Name = "pnlHienThi";
+            this.pnlHienThi.Size = new System.Drawing.Size(1009, 448);
+            this.pnlHienThi.TabIndex = 10;
             // 
             // uscSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.Controls.Add(this.dgvSanPham);
+            this.Controls.Add(this.pnlHienThi);
             this.Controls.Add(this.pnlTacVuSP);
             this.Controls.Add(this.pnlSearchSP);
             this.Controls.Add(this.panel4);
@@ -346,6 +356,7 @@
             this.pnlSearchSP.PerformLayout();
             this.pnlTacVuSP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
+            this.pnlHienThi.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -375,5 +386,6 @@
         private System.Windows.Forms.Button btnDeleteSP;
         private System.Windows.Forms.Button btnSaveSP;
         private System.Windows.Forms.DataGridView dgvSanPham;
+        private System.Windows.Forms.Panel pnlHienThi;
     }
 }

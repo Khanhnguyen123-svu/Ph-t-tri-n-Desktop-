@@ -39,7 +39,7 @@
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
-            this.btnBanHang = new System.Windows.Forms.Button();
+            this.btnDoiTac = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
@@ -74,7 +74,7 @@
             this.panel1.Controls.Add(this.btnNhanVien);
             this.panel1.Controls.Add(this.btnThongKe);
             this.panel1.Controls.Add(this.btnSanPham);
-            this.panel1.Controls.Add(this.btnBanHang);
+            this.panel1.Controls.Add(this.btnDoiTac);
             this.panel1.Controls.Add(this.btnTrangChu);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -89,7 +89,7 @@
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachHang.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnKhachHang.Location = new System.Drawing.Point(12, 525);
+            this.btnKhachHang.Location = new System.Drawing.Point(13, 524);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(143, 49);
             this.btnKhachHang.TabIndex = 12;
@@ -103,7 +103,7 @@
             this.btnThietLap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThietLap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThietLap.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnThietLap.Location = new System.Drawing.Point(12, 605);
+            this.btnThietLap.Location = new System.Drawing.Point(13, 606);
             this.btnThietLap.Name = "btnThietLap";
             this.btnThietLap.Size = new System.Drawing.Size(143, 49);
             this.btnThietLap.TabIndex = 13;
@@ -117,7 +117,7 @@
             this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnNhanVien.Location = new System.Drawing.Point(13, 442);
+            this.btnNhanVien.Location = new System.Drawing.Point(13, 362);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(143, 49);
             this.btnNhanVien.TabIndex = 11;
@@ -131,12 +131,13 @@
             this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnThongKe.Location = new System.Drawing.Point(13, 359);
+            this.btnThongKe.Location = new System.Drawing.Point(12, 281);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(143, 49);
             this.btnThongKe.TabIndex = 10;
             this.btnThongKe.Text = "Thống Kê";
             this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnSanPham
             // 
@@ -144,7 +145,7 @@
             this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSanPham.Location = new System.Drawing.Point(13, 279);
+            this.btnSanPham.Location = new System.Drawing.Point(13, 198);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Size = new System.Drawing.Size(143, 49);
             this.btnSanPham.TabIndex = 9;
@@ -152,19 +153,19 @@
             this.btnSanPham.UseVisualStyleBackColor = false;
             this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
-            // btnBanHang
+            // btnDoiTac
             // 
-            this.btnBanHang.BackColor = System.Drawing.Color.DarkGray;
-            this.btnBanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBanHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBanHang.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBanHang.Location = new System.Drawing.Point(12, 199);
-            this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.Size = new System.Drawing.Size(143, 49);
-            this.btnBanHang.TabIndex = 8;
-            this.btnBanHang.Text = "Bán Hàng";
-            this.btnBanHang.UseVisualStyleBackColor = false;
-            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
+            this.btnDoiTac.BackColor = System.Drawing.Color.DarkGray;
+            this.btnDoiTac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiTac.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiTac.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDoiTac.Location = new System.Drawing.Point(13, 444);
+            this.btnDoiTac.Name = "btnDoiTac";
+            this.btnDoiTac.Size = new System.Drawing.Size(143, 49);
+            this.btnDoiTac.TabIndex = 8;
+            this.btnDoiTac.Text = "Đối Tác";
+            this.btnDoiTac.UseVisualStyleBackColor = false;
+            this.btnDoiTac.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // btnTrangChu
             // 
@@ -210,7 +211,7 @@
             this.Controls.Add(this.menuStrip3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fTableManager";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HandyMart";
             this.Load += new System.EventHandler(this.fTableManager_Load);
             this.panel1.ResumeLayout(false);
@@ -229,7 +230,7 @@
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnSanPham;
-        private System.Windows.Forms.Button btnBanHang;
+        private System.Windows.Forms.Button btnDoiTac;
         private System.Windows.Forms.Button btnTrangChu;
         private System.Windows.Forms.Button btnKhachHang;
         private System.Windows.Forms.PictureBox pictureBox1;

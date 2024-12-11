@@ -29,6 +29,9 @@ D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\
 D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.uscTrangChu.resources
 D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fEmailHoTro.resources
 D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fMainHoTro.resources
-D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.uscBanHang.resources
 D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.uscKhachHang.resources
 D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.uscSanPham.resources
+D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ucCate.resources
+D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fBanHang.resources
+D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.uscDoiTac.resources
+D:\Visual Studio\Đồ án Quản lí cửa hàng tiện lợi\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.uscThongKe.resources

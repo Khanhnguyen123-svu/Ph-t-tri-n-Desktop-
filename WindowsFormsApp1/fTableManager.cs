@@ -81,8 +81,8 @@ namespace WindowsFormsApp1
         private void btnBanHang_Click(object sender, EventArgs e)
         {
             pnlMain.Controls.Clear();
-            uscBanHang uscBanHang = new uscBanHang();
-            pnlMain.Controls.Add(uscBanHang);
+            uscDoiTac uscDoiTac = new uscDoiTac();
+            pnlMain.Controls.Add(uscDoiTac);
         }
 
         private void btnSanPham_Click(object sender, EventArgs e)
@@ -106,6 +106,13 @@ namespace WindowsFormsApp1
         private void pnlMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            pnlMain.Controls.Clear();
+            uscThongKe uscThongKe = new uscThongKe();
+            pnlMain.Controls.Add(uscThongKe);
         }
     }
 }
