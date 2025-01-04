@@ -31,6 +31,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblMANCC = new System.Windows.Forms.Label();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.btnChonTep = new System.Windows.Forms.Button();
+            this.picHinhAnh = new System.Windows.Forms.PictureBox();
+            this.txtHinhAnh = new System.Windows.Forms.TextBox();
+            this.lblAnhSanPham = new System.Windows.Forms.Label();
+            this.txtDanhMuc = new System.Windows.Forms.TextBox();
+            this.lblDanhMuc = new System.Windows.Forms.Label();
             this.nudSoLuongSP = new System.Windows.Forms.NumericUpDown();
             this.dtpHSDSP = new System.Windows.Forms.DateTimePicker();
             this.dtpNNSP = new System.Windows.Forms.DateTimePicker();
@@ -51,10 +59,10 @@
             this.btnUpDateSP = new System.Windows.Forms.Button();
             this.btnAddSP = new System.Windows.Forms.Button();
             this.btnDeleteSP = new System.Windows.Forms.Button();
-            this.btnSaveSP = new System.Windows.Forms.Button();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
             this.pnlHienThi = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongSP)).BeginInit();
             this.pnlSearchSP.SuspendLayout();
             this.pnlTacVuSP.SuspendLayout();
@@ -65,6 +73,14 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel4.Controls.Add(this.lblMANCC);
+            this.panel4.Controls.Add(this.txtMaNCC);
+            this.panel4.Controls.Add(this.btnChonTep);
+            this.panel4.Controls.Add(this.picHinhAnh);
+            this.panel4.Controls.Add(this.txtHinhAnh);
+            this.panel4.Controls.Add(this.lblAnhSanPham);
+            this.panel4.Controls.Add(this.txtDanhMuc);
+            this.panel4.Controls.Add(this.lblDanhMuc);
             this.panel4.Controls.Add(this.nudSoLuongSP);
             this.panel4.Controls.Add(this.dtpHSDSP);
             this.panel4.Controls.Add(this.dtpNNSP);
@@ -80,24 +96,109 @@
             this.panel4.Controls.Add(this.lblSoLuongSP);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1009, 162);
+            this.panel4.Size = new System.Drawing.Size(1009, 210);
             this.panel4.TabIndex = 5;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // lblMANCC
+            // 
+            this.lblMANCC.AutoSize = true;
+            this.lblMANCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMANCC.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblMANCC.Location = new System.Drawing.Point(402, 75);
+            this.lblMANCC.Name = "lblMANCC";
+            this.lblMANCC.Size = new System.Drawing.Size(134, 18);
+            this.lblMANCC.TabIndex = 29;
+            this.lblMANCC.Text = "Mã Nhà Cung Cấp:";
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtMaNCC.Location = new System.Drawing.Point(566, 75);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(154, 22);
+            this.txtMaNCC.TabIndex = 30;
+            // 
+            // btnChonTep
+            // 
+            this.btnChonTep.BackColor = System.Drawing.Color.DarkGray;
+            this.btnChonTep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChonTep.Location = new System.Drawing.Point(897, 103);
+            this.btnChonTep.Name = "btnChonTep";
+            this.btnChonTep.Size = new System.Drawing.Size(88, 45);
+            this.btnChonTep.TabIndex = 28;
+            this.btnChonTep.Text = "Chọn Tệp";
+            this.btnChonTep.UseVisualStyleBackColor = false;
+            this.btnChonTep.Click += new System.EventHandler(this.btnChonTep_Click);
+            // 
+            // picHinhAnh
+            // 
+            this.picHinhAnh.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.picHinhAnh.Location = new System.Drawing.Point(741, 74);
+            this.picHinhAnh.Name = "picHinhAnh";
+            this.picHinhAnh.Size = new System.Drawing.Size(139, 112);
+            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHinhAnh.TabIndex = 27;
+            this.picHinhAnh.TabStop = false;
+            // 
+            // txtHinhAnh
+            // 
+            this.txtHinhAnh.Location = new System.Drawing.Point(827, 34);
+            this.txtHinhAnh.Name = "txtHinhAnh";
+            this.txtHinhAnh.Size = new System.Drawing.Size(170, 22);
+            this.txtHinhAnh.TabIndex = 26;
+            // 
+            // lblAnhSanPham
+            // 
+            this.lblAnhSanPham.AutoSize = true;
+            this.lblAnhSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnhSanPham.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblAnhSanPham.Location = new System.Drawing.Point(738, 35);
+            this.lblAnhSanPham.Name = "lblAnhSanPham";
+            this.lblAnhSanPham.Size = new System.Drawing.Size(71, 18);
+            this.lblAnhSanPham.TabIndex = 25;
+            this.lblAnhSanPham.Text = "Hình Ảnh:";
+            // 
+            // txtDanhMuc
+            // 
+            this.txtDanhMuc.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtDanhMuc.Location = new System.Drawing.Point(566, 35);
+            this.txtDanhMuc.Name = "txtDanhMuc";
+            this.txtDanhMuc.Size = new System.Drawing.Size(154, 22);
+            this.txtDanhMuc.TabIndex = 24;
+            // 
+            // lblDanhMuc
+            // 
+            this.lblDanhMuc.AutoSize = true;
+            this.lblDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDanhMuc.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblDanhMuc.Location = new System.Drawing.Point(402, 34);
+            this.lblDanhMuc.Name = "lblDanhMuc";
+            this.lblDanhMuc.Size = new System.Drawing.Size(80, 18);
+            this.lblDanhMuc.TabIndex = 23;
+            this.lblDanhMuc.Text = "Danh Mục:";
             // 
             // nudSoLuongSP
             // 
-            this.nudSoLuongSP.Location = new System.Drawing.Point(667, 28);
+            this.nudSoLuongSP.Location = new System.Drawing.Point(189, 164);
+            this.nudSoLuongSP.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudSoLuongSP.Name = "nudSoLuongSP";
             this.nudSoLuongSP.Size = new System.Drawing.Size(90, 22);
             this.nudSoLuongSP.TabIndex = 22;
+            this.nudSoLuongSP.ValueChanged += new System.EventHandler(this.nudSoLuongSP_ValueChanged);
             // 
             // dtpHSDSP
             // 
             this.dtpHSDSP.CalendarMonthBackground = System.Drawing.SystemColors.ControlLightLight;
             this.dtpHSDSP.CustomFormat = "dd/MM/yyyy";
             this.dtpHSDSP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHSDSP.Location = new System.Drawing.Point(667, 112);
+            this.dtpHSDSP.Location = new System.Drawing.Point(576, 164);
             this.dtpHSDSP.Name = "dtpHSDSP";
-            this.dtpHSDSP.Size = new System.Drawing.Size(202, 22);
+            this.dtpHSDSP.Size = new System.Drawing.Size(117, 22);
             this.dtpHSDSP.TabIndex = 21;
             // 
             // dtpNNSP
@@ -105,9 +206,9 @@
             this.dtpNNSP.CalendarMonthBackground = System.Drawing.SystemColors.ControlLightLight;
             this.dtpNNSP.CustomFormat = "dd/MM/yyyy";
             this.dtpNNSP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNNSP.Location = new System.Drawing.Point(667, 71);
+            this.dtpNNSP.Location = new System.Drawing.Point(576, 123);
             this.dtpNNSP.Name = "dtpNNSP";
-            this.dtpNNSP.Size = new System.Drawing.Size(202, 22);
+            this.dtpNNSP.Size = new System.Drawing.Size(117, 22);
             this.dtpNNSP.TabIndex = 20;
             // 
             // lblHSD
@@ -115,7 +216,7 @@
             this.lblHSD.AutoSize = true;
             this.lblHSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHSD.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblHSD.Location = new System.Drawing.Point(470, 112);
+            this.lblHSD.Location = new System.Drawing.Point(402, 167);
             this.lblHSD.Name = "lblHSD";
             this.lblHSD.Size = new System.Drawing.Size(100, 18);
             this.lblHSD.TabIndex = 19;
@@ -126,7 +227,7 @@
             this.lblNgayNhapSP.AutoSize = true;
             this.lblNgayNhapSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayNhapSP.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblNgayNhapSP.Location = new System.Drawing.Point(470, 71);
+            this.lblNgayNhapSP.Location = new System.Drawing.Point(402, 126);
             this.lblNgayNhapSP.Name = "lblNgayNhapSP";
             this.lblNgayNhapSP.Size = new System.Drawing.Size(158, 18);
             this.lblNgayNhapSP.TabIndex = 17;
@@ -205,7 +306,7 @@
             this.lblSoLuongSP.AutoSize = true;
             this.lblSoLuongSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuongSP.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblSoLuongSP.Location = new System.Drawing.Point(470, 30);
+            this.lblSoLuongSP.Location = new System.Drawing.Point(21, 168);
             this.lblSoLuongSP.Name = "lblSoLuongSP";
             this.lblSoLuongSP.Size = new System.Drawing.Size(149, 18);
             this.lblSoLuongSP.TabIndex = 4;
@@ -215,7 +316,7 @@
             // 
             this.pnlSearchSP.Controls.Add(this.btnSearchSP);
             this.pnlSearchSP.Controls.Add(this.txtSearchSP);
-            this.pnlSearchSP.Location = new System.Drawing.Point(3, 171);
+            this.pnlSearchSP.Location = new System.Drawing.Point(3, 219);
             this.pnlSearchSP.Name = "pnlSearchSP";
             this.pnlSearchSP.Size = new System.Drawing.Size(481, 62);
             this.pnlSearchSP.TabIndex = 6;
@@ -223,6 +324,7 @@
             // btnSearchSP
             // 
             this.btnSearchSP.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSearchSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchSP.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSearchSP.Location = new System.Drawing.Point(373, 5);
@@ -231,6 +333,7 @@
             this.btnSearchSP.TabIndex = 12;
             this.btnSearchSP.Text = "Tìm kiếm";
             this.btnSearchSP.UseVisualStyleBackColor = false;
+            this.btnSearchSP.Click += new System.EventHandler(this.btnSearchSP_Click);
             // 
             // txtSearchSP
             // 
@@ -245,8 +348,7 @@
             this.pnlTacVuSP.Controls.Add(this.btnUpDateSP);
             this.pnlTacVuSP.Controls.Add(this.btnAddSP);
             this.pnlTacVuSP.Controls.Add(this.btnDeleteSP);
-            this.pnlTacVuSP.Controls.Add(this.btnSaveSP);
-            this.pnlTacVuSP.Location = new System.Drawing.Point(530, 171);
+            this.pnlTacVuSP.Location = new System.Drawing.Point(530, 219);
             this.pnlTacVuSP.Name = "pnlTacVuSP";
             this.pnlTacVuSP.Size = new System.Drawing.Size(482, 62);
             this.pnlTacVuSP.TabIndex = 8;
@@ -254,23 +356,26 @@
             // btnUpDateSP
             // 
             this.btnUpDateSP.BackColor = System.Drawing.Color.DarkGray;
+            this.btnUpDateSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpDateSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpDateSP.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUpDateSP.Location = new System.Drawing.Point(267, 5);
+            this.btnUpDateSP.Location = new System.Drawing.Point(335, 5);
             this.btnUpDateSP.Name = "btnUpDateSP";
-            this.btnUpDateSP.Size = new System.Drawing.Size(83, 49);
+            this.btnUpDateSP.Size = new System.Drawing.Size(98, 49);
             this.btnUpDateSP.TabIndex = 12;
             this.btnUpDateSP.Text = "Sửa";
             this.btnUpDateSP.UseVisualStyleBackColor = false;
+            this.btnUpDateSP.Click += new System.EventHandler(this.btnUpDateSP_Click);
             // 
             // btnAddSP
             // 
             this.btnAddSP.BackColor = System.Drawing.Color.DarkGray;
+            this.btnAddSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSP.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddSP.Location = new System.Drawing.Point(53, 5);
+            this.btnAddSP.Location = new System.Drawing.Point(49, 5);
             this.btnAddSP.Name = "btnAddSP";
-            this.btnAddSP.Size = new System.Drawing.Size(83, 49);
+            this.btnAddSP.Size = new System.Drawing.Size(94, 49);
             this.btnAddSP.TabIndex = 11;
             this.btnAddSP.Text = "Thêm";
             this.btnAddSP.UseVisualStyleBackColor = false;
@@ -279,26 +384,16 @@
             // btnDeleteSP
             // 
             this.btnDeleteSP.BackColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteSP.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDeleteSP.Location = new System.Drawing.Point(164, 5);
+            this.btnDeleteSP.Location = new System.Drawing.Point(196, 5);
             this.btnDeleteSP.Name = "btnDeleteSP";
-            this.btnDeleteSP.Size = new System.Drawing.Size(83, 49);
+            this.btnDeleteSP.Size = new System.Drawing.Size(95, 49);
             this.btnDeleteSP.TabIndex = 12;
             this.btnDeleteSP.Text = "Xóa";
             this.btnDeleteSP.UseVisualStyleBackColor = false;
-            // 
-            // btnSaveSP
-            // 
-            this.btnSaveSP.BackColor = System.Drawing.Color.DarkGray;
-            this.btnSaveSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveSP.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSaveSP.Location = new System.Drawing.Point(372, 5);
-            this.btnSaveSP.Name = "btnSaveSP";
-            this.btnSaveSP.Size = new System.Drawing.Size(83, 49);
-            this.btnSaveSP.TabIndex = 13;
-            this.btnSaveSP.Text = "Lưu";
-            this.btnSaveSP.UseVisualStyleBackColor = false;
+            this.btnDeleteSP.Click += new System.EventHandler(this.btnDeleteSP_Click);
             // 
             // dgvSanPham
             // 
@@ -321,20 +416,20 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvSanPham.Location = new System.Drawing.Point(3, 3);
+            this.dgvSanPham.Location = new System.Drawing.Point(0, 0);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.RowHeadersWidth = 60;
             this.dgvSanPham.RowTemplate.Height = 24;
-            this.dgvSanPham.Size = new System.Drawing.Size(1003, 441);
+            this.dgvSanPham.Size = new System.Drawing.Size(1009, 415);
             this.dgvSanPham.TabIndex = 9;
             this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellContentClick);
             // 
             // pnlHienThi
             // 
             this.pnlHienThi.Controls.Add(this.dgvSanPham);
-            this.pnlHienThi.Location = new System.Drawing.Point(3, 254);
+            this.pnlHienThi.Location = new System.Drawing.Point(3, 287);
             this.pnlHienThi.Name = "pnlHienThi";
-            this.pnlHienThi.Size = new System.Drawing.Size(1009, 448);
+            this.pnlHienThi.Size = new System.Drawing.Size(1009, 415);
             this.pnlHienThi.TabIndex = 10;
             // 
             // uscSanPham
@@ -351,6 +446,7 @@
             this.Load += new System.EventHandler(this.uscSanPham_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongSP)).EndInit();
             this.pnlSearchSP.ResumeLayout(false);
             this.pnlSearchSP.PerformLayout();
@@ -384,8 +480,15 @@
         private System.Windows.Forms.Button btnUpDateSP;
         private System.Windows.Forms.Button btnAddSP;
         private System.Windows.Forms.Button btnDeleteSP;
-        private System.Windows.Forms.Button btnSaveSP;
         private System.Windows.Forms.DataGridView dgvSanPham;
         private System.Windows.Forms.Panel pnlHienThi;
+        private System.Windows.Forms.TextBox txtDanhMuc;
+        private System.Windows.Forms.Label lblDanhMuc;
+        private System.Windows.Forms.PictureBox picHinhAnh;
+        private System.Windows.Forms.TextBox txtHinhAnh;
+        private System.Windows.Forms.Label lblAnhSanPham;
+        private System.Windows.Forms.Button btnChonTep;
+        private System.Windows.Forms.Label lblMANCC;
+        private System.Windows.Forms.TextBox txtMaNCC;
     }
 }

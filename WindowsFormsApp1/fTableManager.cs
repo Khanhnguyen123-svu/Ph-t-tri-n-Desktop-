@@ -19,45 +19,50 @@ namespace WindowsFormsApp1
         String str = "Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
-        public fTableManager()
+        public string VaiTro { get; set; }
+        
+        public fTableManager(string vaiTro)
         {
             InitializeComponent();
-        }
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAccountProfile Profile = new fAccountProfile();
-            this.Hide();
-            Profile.ShowDialog();
-            this.Show();
-        }
+            VaiTro = vaiTro;
+            UpdateButtonState();
+            
 
-
-        private void TTCNToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            fAccountProfile TTCN = new fAccountProfile();
-            this.Hide();
-            TTCN.ShowDialog();
-            this.Show();
         }
-
-        private void đăngXuấtToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void fTableManager_Load(object sender, EventArgs e)
         {
             
             pnlMain.Controls.Clear();
-            uscTrangChu uscTrangChu = new uscTrangChu();  
+            uscTrangChu uscTrangChu = new uscTrangChu();
             pnlMain.Controls.Add(uscTrangChu);
+
+            
+
+        }
+        private void UpdateButtonState()
+        {
+            if (VaiTro == "Nhân viên")
+            {
+                btnNhanVien.Enabled = false;
+                btnThongKe.Enabled = false;
+                btnDoiTac.Enabled = false;
+                btnThietLap.Enabled = false;
+                btnSanPham.Enabled = true;
+                btnKhachHang.Enabled = true;
+                btnTrangChu.Enabled = true;
+            }
+            else if (VaiTro == "Quản lý")
+            {
+                btnNhanVien.Enabled = true;
+                btnThongKe.Enabled = true;
+                btnDoiTac.Enabled = true;
+                btnThietLap.Enabled = true;
+                btnSanPham.Enabled = true;
+                btnKhachHang.Enabled = true;
+                btnTrangChu.Enabled = true;
+            }
         }
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -67,8 +72,6 @@ namespace WindowsFormsApp1
             uscNhanVien uscNhanVien = new uscNhanVien();
             pnlMain.Controls.Add(uscNhanVien);
             
-
-
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -100,6 +103,10 @@ namespace WindowsFormsApp1
         }
         private void btnThietLap_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            fThietLap thietlap = new fThietLap();
+            thietlap.ShowDialog();
+            this.Show();
 
         }
 
@@ -113,6 +120,19 @@ namespace WindowsFormsApp1
             pnlMain.Controls.Clear();
             uscThongKe uscThongKe = new uscThongKe();
             pnlMain.Controls.Add(uscThongKe);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            fDangNhap dangNhap = new fDangNhap();
+            dangNhap.ShowDialog();
+        }
+
+        private void menuStrip3_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

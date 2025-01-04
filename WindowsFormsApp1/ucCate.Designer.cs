@@ -48,7 +48,7 @@
             // lblCate
             // 
             this.lblCate.AutoSize = true;
-            this.lblCate.Location = new System.Drawing.Point(62, 100);
+            this.lblCate.Location = new System.Drawing.Point(12, 100);
             this.lblCate.Name = "lblCate";
             this.lblCate.Size = new System.Drawing.Size(16, 16);
             this.lblCate.TabIndex = 1;

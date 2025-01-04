@@ -33,8 +33,8 @@ namespace WindowsFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDangNhap));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtAccount = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnEnter = new System.Windows.Forms.Button();
@@ -42,7 +42,6 @@ namespace WindowsFormsApp1
             this.label6 = new System.Windows.Forms.Label();
             this.lblErrorAccount = new System.Windows.Forms.Label();
             this.btnDK = new System.Windows.Forms.Button();
-            this.cbLuuMK = new System.Windows.Forms.CheckBox();
             this.btnBanHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -66,22 +65,22 @@ namespace WindowsFormsApp1
             this.label2.Text = "Đăng Nhập";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtAccount
+            // txtTenDangNhap
             // 
-            this.txtAccount.Location = new System.Drawing.Point(740, 222);
-            this.txtAccount.Multiline = true;
-            this.txtAccount.Name = "txtAccount";
-            this.txtAccount.Size = new System.Drawing.Size(256, 32);
-            this.txtAccount.TabIndex = 3;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(740, 222);
+            this.txtTenDangNhap.Multiline = true;
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(256, 32);
+            this.txtTenDangNhap.TabIndex = 3;
             // 
-            // txtPassword
+            // txtMatKhau
             // 
-            this.txtPassword.Location = new System.Drawing.Point(740, 291);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(256, 32);
-            this.txtPassword.TabIndex = 4;
+            this.txtMatKhau.Location = new System.Drawing.Point(740, 291);
+            this.txtMatKhau.Multiline = true;
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(256, 32);
+            this.txtMatKhau.TabIndex = 4;
             // 
             // label3
             // 
@@ -109,6 +108,7 @@ namespace WindowsFormsApp1
             // btnEnter
             // 
             this.btnEnter.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.Location = new System.Drawing.Point(731, 365);
             this.btnEnter.Name = "btnEnter";
@@ -155,6 +155,7 @@ namespace WindowsFormsApp1
             // btnDK
             // 
             this.btnDK.BackColor = System.Drawing.Color.DarkGray;
+            this.btnDK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDK.Location = new System.Drawing.Point(826, 365);
             this.btnDK.Name = "btnDK";
@@ -164,22 +165,10 @@ namespace WindowsFormsApp1
             this.btnDK.UseVisualStyleBackColor = false;
             this.btnDK.Click += new System.EventHandler(this.btnDK_Click);
             // 
-            // cbLuuMK
-            // 
-            this.cbLuuMK.AutoSize = true;
-            this.cbLuuMK.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.cbLuuMK.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cbLuuMK.Location = new System.Drawing.Point(848, 329);
-            this.cbLuuMK.Name = "cbLuuMK";
-            this.cbLuuMK.Size = new System.Drawing.Size(148, 20);
-            this.cbLuuMK.TabIndex = 15;
-            this.cbLuuMK.Text = "Ghi Nhớ Đăng Nhập";
-            this.cbLuuMK.UseVisualStyleBackColor = false;
-            this.cbLuuMK.CheckedChanged += new System.EventHandler(this.cbLuuMK_CheckedChanged);
-            // 
             // btnBanHang
             // 
             this.btnBanHang.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBanHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBanHang.Location = new System.Drawing.Point(921, 365);
             this.btnBanHang.Name = "btnBanHang";
@@ -198,7 +187,6 @@ namespace WindowsFormsApp1
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1017, 538);
             this.Controls.Add(this.btnBanHang);
-            this.Controls.Add(this.cbLuuMK);
             this.Controls.Add(this.btnDK);
             this.Controls.Add(this.lblErrorAccount);
             this.Controls.Add(this.label6);
@@ -206,8 +194,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtAccount);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.txtTenDangNhap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.AppStarting;
@@ -226,8 +214,8 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAccount;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Label label3;
         private EventHandler Form1_Load;
         private System.Windows.Forms.Label label4;
@@ -236,7 +224,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblErrorAccount;
         private System.Windows.Forms.Button btnDK;
-        private System.Windows.Forms.CheckBox cbLuuMK;
         private System.Windows.Forms.Button btnBanHang;
 
         public EventHandler txtPassword_TextChanged { get; private set; }

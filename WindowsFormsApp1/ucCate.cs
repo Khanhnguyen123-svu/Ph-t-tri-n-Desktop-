@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
     {
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True");
         SqlCommand command;
-        //String str = "Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True";
+        String str = "Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         private int gia;
@@ -28,14 +28,18 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        public ucCate(string pic, string catename)
+        public event EventHandler OnProductClick;
+        public ucCate(string pic, string catename, string masanPham, int gia)
         {
             InitializeComponent();
             lblCate.Text = catename;
             picCate.Load(pic);
-            
+            TenSanPham = catename;
+            Gia = gia;
+            MaSanPham = masanPham;
 
-
+            picCate.Click -= picCate_Click;
+            picCate.Click += picCate_Click;
         }
 
         private void ucCate_Load(object sender, EventArgs e)
@@ -46,6 +50,18 @@ namespace WindowsFormsApp1
         private void picCate_Click(object sender, EventArgs e)
         {
             this.OnClick(e);
+            var parentForm = this.FindForm() as fBanHang;
+
+            // Kiểm tra nếu parentForm là fBanHang
+            if (parentForm != null)
+            {
+                // Gọi phương thức ShowProductInfo trong fBanHang
+                parentForm.AddProductToBill(MaSanPham, TenSanPham, Gia, HinhAnh);
+            }
+            else
+            {
+                MessageBox.Show("Không thể tìm thấy form cha!", "Thông báo");
+            }
         }
 
         private void lblCate_Click(object sender, EventArgs e)

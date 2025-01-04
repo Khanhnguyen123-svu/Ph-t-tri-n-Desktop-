@@ -62,5 +62,77 @@ namespace WindowsFormsApp1
         {
             dgvTongTien.AutoGenerateColumns = true;
         }
+
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            DateTime selectedDate = dateTimePicker1.Value.Date;
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+                command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM ThongKe WHERE NgayLap = @NgayLap";
+                command.Parameters.AddWithValue("@NgayLap", selectedDate);  
+
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dgvTongTien.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lọc dữ liệu: " + ex.Message, "Thông báo");
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim();  
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+                command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM ThongKe WHERE MaHoaDon LIKE @Keyword OR TenKhachHang LIKE @Keyword OR MaSanPham LIKE @Keyword";
+                command.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");  
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dgvTongTien.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tìm kiếm: " + ex.Message, "Thông báo");
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        private void pnlThongKe_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fEmailHoTro));
             this.pnlEmailHoTro = new System.Windows.Forms.Panel();
             this.pnlThongTinLienHe = new System.Windows.Forms.Panel();
             this.btnSend = new System.Windows.Forms.Button();
@@ -164,6 +165,7 @@
             this.ClientSize = new System.Drawing.Size(697, 516);
             this.Controls.Add(this.pnlEmailHoTro);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fEmailHoTro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fEmailHoTro";

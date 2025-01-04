@@ -85,7 +85,49 @@ namespace WindowsFormsApp1
         private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dgvNhanVien.AutoGenerateColumns = true;
-            
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvNhanVien.Rows[e.RowIndex];
+                txtMaNV.Text = row.Cells["MaNhanVien"].Value.ToString();
+                txtTenNV.Text = row.Cells["TenNhanVien"].Value.ToString();
+                txtSDT.Text = row.Cells["SoDienThoai"].Value.ToString();
+                txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
+                dtpNgaySinh.Text = row.Cells["NgaySinh"].Value.ToString();
+                txtEmail.Text = row.Cells["Email"].Value.ToString();
+                string gioiTinh = row.Cells["GioiTinh"].Value.ToString();
+                if (gioiTinh == "Nam")
+                {
+                    rdbNam.Checked = true;
+                    rdbNu.Checked = false;
+                }
+                else if (gioiTinh == "Nữ")
+                {
+                    rdbNam.Checked = false;
+                    rdbNu.Checked = true;
+                }
+                else
+                {
+                    rdbNam.Checked = false;
+                    rdbNu.Checked = false;
+                }
+                string vaiTro = row.Cells["VaiTro"].Value.ToString();
+                if (vaiTro == "Quản lý")
+                {
+                    rdbNhanVien.Checked = false;
+                    rdbQuanLi.Checked = true;
+                }
+                else if (vaiTro == "Nhân viên")
+                {
+                    rdbNhanVien.Checked = true;
+                    rdbQuanLi.Checked = false;
+                }
+                else
+                {
+                    rdbNhanVien.Checked = false;
+                    rdbNhanVien.Checked = false;
+                }
+            }
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -244,91 +286,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            string maNhanVien = txtMaNV.Text.Trim();
-            string tenNhanVien = txtTenNV.Text.Trim();
-            string soDienThoai = txtSDT.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string diaChi = txtDiaChi.Text.Trim();
-            DateTime ngaySinh = dtpNgaySinh.Value;
-            string gioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
-            string vaiTro = rdbNhanVien.Checked ? "Nhân viên" : "Quản lý";
-            if (string.IsNullOrEmpty(maNhanVien) || string.IsNullOrEmpty(tenNhanVien))
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên!", "Thông báo");
-                return;
-            }
-            string queryCheck = "SELECT COUNT(*) FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
-            string queryUpdate = "UPDATE NhanVien SET TenNhanVien = @TenNhanVien, SoDienThoai = @SoDienThoai, " +
-                                 "Email = @Email, DiaChi = @DiaChi, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, VaiTro = @VaiTro " +
-                                 "WHERE MaNhanVien = @MaNhanVien";
-            string queryInsert = "INSERT INTO NhanVien (MaNhanVien, TenNhanVien, SoDienThoai, Email, DiaChi, NgaySinh, GioiTinh, VaiTro) " +
-                                 "VALUES (@MaNhanVien, @TenNhanVien, @SoDienThoai, @Email, @DiaChi, @NgaySinh, @GioiTinh, @VaiTro)";
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(str))
-                {
-                    connection.Open();
-                    using (SqlCommand checkCommand = new SqlCommand(queryCheck, connection))
-                    {
-                        checkCommand.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
-                        int count = (int)checkCommand.ExecuteScalar();
-
-                        if (count > 0)
-                        {
-                            using (SqlCommand updateCommand = new SqlCommand(queryUpdate, connection))
-                            {
-                                updateCommand.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
-                                updateCommand.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
-                                updateCommand.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
-                                updateCommand.Parameters.AddWithValue("@Email", email);
-                                updateCommand.Parameters.AddWithValue("@DiaChi", diaChi);
-                                updateCommand.Parameters.AddWithValue("@NgaySinh", ngaySinh);
-                                updateCommand.Parameters.AddWithValue("@GioiTinh", gioiTinh);
-                                updateCommand.Parameters.AddWithValue("@VaiTro", vaiTro);
-                                updateCommand.ExecuteNonQuery();
-
-                                MessageBox.Show("Cập nhật thông tin nhân viên thành công!", "Thông báo");
-                            }
-                        }
-                        else
-                        {
-                            using (SqlCommand insertCommand = new SqlCommand(queryInsert, connection))
-                            {
-                                insertCommand.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
-                                insertCommand.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
-                                insertCommand.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
-                                insertCommand.Parameters.AddWithValue("@Email", email);
-                                insertCommand.Parameters.AddWithValue("@DiaChi", diaChi);
-                                insertCommand.Parameters.AddWithValue("@NgaySinh", ngaySinh);
-                                insertCommand.Parameters.AddWithValue("@GioiTinh", gioiTinh);
-                                insertCommand.Parameters.AddWithValue("@VaiTro", vaiTro);
-                                insertCommand.ExecuteNonQuery();
-
-                                MessageBox.Show("Thêm nhân viên mới thành công!", "Thông báo");
-                            }
-                        }
-                    }
-                }
-                LoadData();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi lưu nhân viên: " + ex.Message, "Thông báo");
-            }
-            txtMaNV.Clear();
-            txtTenNV.Clear();
-            txtSDT.Clear();
-            txtEmail.Clear();
-            txtDiaChi.Clear();
-            dtpNgaySinh.Value = DateTime.Now;
-            rdbNam.Checked = false;
-            rdbNu.Checked = false;
-            rdbNhanVien.Checked = false;
-            rdbQuanLi.Checked = false;
-        }
+        
     }
  }
 

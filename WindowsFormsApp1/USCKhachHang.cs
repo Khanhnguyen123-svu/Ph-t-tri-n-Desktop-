@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string keyword = txtSearch.Text.Trim();
-            string query = "SELECT * FROM KhachHang WHERE MaKhachHang LIKE @keyword OR TenNhanVien LIKE @keyword";
+            string query = "SELECT * FROM KhachHang WHERE MaKhachHang LIKE @keyword OR TenKhachHang LIKE @keyword";
             try
             {
                 using (SqlConnection connection = new SqlConnection(str))
@@ -97,51 +97,78 @@ namespace WindowsFormsApp1
         private void dgvKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dgvKhachHang.AutoGenerateColumns = true;
-        }
-
-        private void btnAddKH_Click(object sender, EventArgs e)
-        {
-            string query = "INSERT INTO KhachHang (MaKhachHang, TenKhachHang, SoDienThoai, Email, DiaChi, NgaySinh, GioiTinh) " +
-                  "VALUES (@MaKhachHang, @TenKhachHang, @SoDienThoai, @Email, @DiaChi, @NgaySinh, @GioiTinh)";
-            try
+            if (e.RowIndex >= 0)
             {
-                using (SqlConnection connection = new SqlConnection(str))
+                DataGridViewRow row = dgvKhachHang.Rows[e.RowIndex];
+                txtMaKH.Text = row.Cells["MaKhachHang"].Value.ToString();
+                txtTenKH.Text = row.Cells["TenKhachHang"].Value.ToString();
+                txtSDT.Text = row.Cells["SoDienThoai"].Value.ToString();
+                string gioiTinh = row.Cells["GioiTinh"].Value.ToString();
+                if (gioiTinh == "Nam")
                 {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@MaNhanVien", txtMaNV.Text);
-                        command.Parameters.AddWithValue("@TenNhanVien", txtTenNV.Text);
-                        command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
-                        command.Parameters.AddWithValue("@Email", txtEmail.Text);
-                        command.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                        command.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
-                        command.Parameters.AddWithValue("@GioiTinh", rdbKHNam.Checked ? "Nam" : "Nữ");
-                        command.ExecuteNonQuery();
-                    }
+                    rdbKHNam.Checked = true;
+                    rdbKHNu.Checked = false;
+                }
+                else if (gioiTinh == "Nữ")
+                {
+                    rdbKHNam.Checked = false;
+                    rdbKHNu.Checked = true;
+                }
+                else
+                {
+                    rdbKHNam.Checked = false;
+                    rdbKHNu.Checked = false;
                 }
 
-                MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
-                LoadData();
             }
-            catch (Exception ex)
+        }
+        private void btnAddKH_Click(object sender, EventArgs e)
+        {
+            string query = "INSERT INTO KhachHang (MaKhachHang, TenKhachHang, SoDienThoai,  GioiTinh) " +
+                  "VALUES (@MaKhachHang, @TenKhachHang, @SoDienThoai, @GioiTinh)";
+            if (txtMaKH.Text == "" && txtTenKH.Text == "" && txtSDT.Text == "" )
             {
-                MessageBox.Show("Lỗi khi thêm khách hàng: ", "Thông báo" + ex.Message);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
-            txtMaNV.Clear();
-            txtTenNV.Clear();
+            else
+            {
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(str))
+                    {
+                        connection.Open();
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@MaKhachHang", txtMaKH.Text);
+                            command.Parameters.AddWithValue("@TenKhachHang", txtTenKH.Text);
+                            command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
+                            command.Parameters.AddWithValue("@GioiTinh", rdbKHNam.Checked ? "Nam" : "Nu");
+                            command.ExecuteNonQuery();
+
+                        }
+                    }
+                    MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
+                    LoadData();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi thêm khách hàng: ", "Thông báo" + ex.Message);
+                }
+            }
+            txtMaKH.Clear();
+            txtTenKH.Clear();
             txtSDT.Clear();
-            txtEmail.Clear();
-            txtDiaChi.Clear();
-            dtpNgaySinh.Value = DateTime.Now;
             rdbKHNam.Checked = false;
             rdbKHNu.Checked = false;
+
         }
 
         private void btnEditKH_Click(object sender, EventArgs e)
         {
             string query = "UPDATE KhachHang SET TenKhachHang = @TenKhachHang, SoDienThoai = @SoDienThoai, " +
-                   "Email = @Email, DiaChi = @DiaChi, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh " +
+                   " GioiTinh = @GioiTinh " +
                    "WHERE MaKhachHang = @MaKhachHang";
             try
             {
@@ -150,13 +177,10 @@ namespace WindowsFormsApp1
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@MaNhanVien", txtMaNV.Text);
-                        command.Parameters.AddWithValue("@TenNhanVien", txtTenNV.Text);
+                        command.Parameters.AddWithValue("@MaKhachHang", txtMaKH.Text);
+                        command.Parameters.AddWithValue("@TenKhachHang", txtTenKH.Text);
                         command.Parameters.AddWithValue("@SoDienThoai", txtSDT.Text);
-                        command.Parameters.AddWithValue("@Email", txtEmail.Text);
-                        command.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-                        command.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
-                        command.Parameters.AddWithValue("@GioiTinh", rdbKHNam.Checked ? "Nam" : "Nữ");
+                        command.Parameters.AddWithValue("@GioiTinh", rdbKHNam.Checked ? "Nam" : "Nu");
                         command.ExecuteNonQuery();
                     }
                 }
@@ -168,12 +192,9 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Lỗi khi sửa khách hàng: ", "Thông báo" + ex.Message);
             }
-            txtMaNV.Clear();
-            txtTenNV.Clear();
+            txtMaKH.Clear();
+            txtTenKH.Clear();
             txtSDT.Clear();
-            txtEmail.Clear();
-            txtDiaChi.Clear();
-            dtpNgaySinh.Value = DateTime.Now;
             rdbKHNam.Checked = false;
             rdbKHNu.Checked = false;
         }
@@ -228,6 +249,11 @@ namespace WindowsFormsApp1
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
 
         }

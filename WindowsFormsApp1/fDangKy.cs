@@ -17,6 +17,11 @@ namespace WindowsFormsApp1
 {
     public partial class fDangKy : Form
     {
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True");
+        SqlCommand command;
+        String str = "Data Source=DESKTOP-O8QHN7N;Initial Catalog=QLCH;Integrated Security=True";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
         public fDangKy()
         {
             InitializeComponent();
@@ -28,36 +33,61 @@ namespace WindowsFormsApp1
         }
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-             string tenDangNhap = txtTenDangNhap.Text;
+            string tenDangNhap = txtTenDangNhap.Text;
             string matKhau = txtMatKhau.Text;
             string xacNhanMatKhau = txtXacNhanMatKhau.Text;
-            string email = txtEmail.Text;
-            if (string.IsNullOrWhiteSpace(txtTenDangNhap.Text) ||
-           string.IsNullOrWhiteSpace(txtMatKhau.Text) ||
-           string.IsNullOrWhiteSpace(txtXacNhanMatKhau.Text) ||
-           string.IsNullOrWhiteSpace(txtEmail.Text))
+            string vaiTro = "";
+            if (rdbQuanLi.Checked)
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }   
-            if (txtMatKhau.Text != txtXacNhanMatKhau.Text)
+                vaiTro = "Quản lý";
+            }
+            else if (rdbNhanVien.Checked)
             {
-                MessageBox.Show("Mật khẩu xác nhận không khớp.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                vaiTro = "Nhân viên";
+            }
+
+            if (string.IsNullOrEmpty(vaiTro))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if (matKhau != xacNhanMatKhau)
+            {
+                MessageBox.Show("Mật khẩu và xác nhận mật khẩu không khớp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string query = "INSERT INTO TaiKhoan (TenDangNhap, MatKhau, XacNhanMatKhau, VaiTro) VALUES (@TenDangNhap, @MatKhau, @XacNhanMatKhau, @VaiTro)";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(str))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@TenDangNhap", tenDangNhap);
+                        command.Parameters.AddWithValue("@MatKhau", matKhau);
+                        command.Parameters.AddWithValue("@XacNhanMatKhau", xacNhanMatKhau);
+                        command.Parameters.AddWithValue("@VaiTro", vaiTro);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show("Đăng ký tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đăng ký tài khoản: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             this.Hide();
             fDangNhap dangnhap = new fDangNhap();
             dangnhap.Show();
 
             
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
         {
             
